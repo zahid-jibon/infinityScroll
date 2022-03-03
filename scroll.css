@@ -7,8 +7,42 @@ html{
 body{
     margin: 0;
     font-family:roboto ,sans-serif;
-    background-color: fff;
+    background-color: #2C3333;
 }
+
+.title{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+}
+
+h1 span{
+    transition: 0.4s;
+}
+
+h1:hover span:nth-child(1){
+    margin-right: 9px;
+}
+
+h1:hover span:nth-child(1)::after{
+    content: "By Zahid";
+}
+
+h1:hover span:nth-child(2){
+    margin-left: 30px;
+}
+
+h1:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 80px #fff,
+                0 0 160px #fff,
+                0 0 180px #fff;
+}
+
+
 
 h1{
     text-align: center;
@@ -16,6 +50,7 @@ h1{
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 40px;
+    color: white;
 }
 
 .loader{
